@@ -1,1 +1,1 @@
-This is the Next.js vercel update
+MVP POC Project
