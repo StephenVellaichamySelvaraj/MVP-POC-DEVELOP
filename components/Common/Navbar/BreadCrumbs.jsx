@@ -10,7 +10,7 @@ export default function BreadCrumbs(props) {
     const HeaderDatasourceSysId = props?.HeaderDatasource[0]?.sys?.id
     const BreadCrumbsInsProps = useContentfulInspectorMode({ entryId: HeaderDatasourceSysId });
     const headerFields = props?.HeaderDatasource[0]?.fields
-    console.log(headerFields?.headerBottomMiddle)
+    //console.log(headerFields?.headerBottomMiddle)
 
     var addresses = pathname?.split('/').map(function (address, index) {
         //console.log(index)

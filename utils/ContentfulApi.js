@@ -37,7 +37,7 @@ export default class ContentfulApi {
       const bearerToken = preview == "1" ? process.env.PIM_PREVIEW_ACCESS_TOKEN : process.env.PIM_ACCESS_TOKEN;
       const isPreviewFlag = preview == "1" ? true : false;
 
-      console.log(`Bearer token: ${fetchUrl}, isPreviewFlag: ${isPreviewFlag}`)
+      //console.log(`Bearer token: ${fetchUrl}, isPreviewFlag: ${isPreviewFlag}`)
  
       const fetchOptions = {
         method: "POST",
