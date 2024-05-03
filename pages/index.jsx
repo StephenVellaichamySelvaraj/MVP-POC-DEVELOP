@@ -15,7 +15,10 @@ export async function getStaticProps( context ) {
   const HeaderDatasource = await getHeaderDataSource();
 
   return {
-    props: { homePageData: res? res?.items:null, categories: Categories? Categories?.items:null, HeaderDatasource: HeaderDatasource? HeaderDatasource?.items:null }, revalidate: 1
+    props: { homePageData: res? res?.items:null, 
+      categories: Categories? Categories?.items:null, 
+      HeaderDatasource: HeaderDatasource? HeaderDatasource?.items:null }, 
+      revalidate: 1
   }
 }
 
