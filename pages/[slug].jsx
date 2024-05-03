@@ -41,7 +41,10 @@ export async function getStaticProps( context ) {
   }
 
   return {
-    props: { slugPageData: res? res.items:null, categories: Categories? Categories?.items:null, HeaderDatasource: HeaderDatasource? HeaderDatasource?.items:null }, revalidate: 1
+    props: { slugPageData: res? res.items:null, 
+      categories: Categories? Categories?.items:null, 
+      HeaderDatasource: HeaderDatasource? HeaderDatasource?.items:null }, 
+      revalidate: 10
   }
 }
 
