@@ -26,10 +26,7 @@ export async function getStaticProps( context ) {
 
   const res = await ContentfulApi.getLandingPage(context.params.slug, context.draftMode? "1":"2")
   const Categories = await getCategory();
-
   const HeaderDatasource = await getHeaderDataSource();
-  //console.log("Header Setting: ")
-  //console.log(HeaderDatasource)
 
   if (!res.items.length){
     return{ 

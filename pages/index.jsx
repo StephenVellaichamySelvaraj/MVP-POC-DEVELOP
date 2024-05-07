@@ -9,7 +9,6 @@ import getCategory from '../utils/Hooks/getCategory';
 import getHeaderDataSource from '../utils/Hooks/getHeaderDataSource';
 
 export async function getStaticProps( context ) {
-  //console.log(`{Index context: ${JSON.stringify(context)}}`)  
   const res = await ContentfulApi.getLandingPage("home-page", context.draftMode? "1":"2")
   const Categories = await getCategory();
   const HeaderDatasource = await getHeaderDataSource();
