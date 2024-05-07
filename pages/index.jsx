@@ -18,7 +18,7 @@ export async function getStaticProps( context ) {
     props: { homePageData: res? res?.items:null, 
       categories: Categories? Categories?.items:null, 
       HeaderDatasource: HeaderDatasource? HeaderDatasource?.items:null }, 
-      revalidate: 1
+      revalidate: 10
   }
 }
 
