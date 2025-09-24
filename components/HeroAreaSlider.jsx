@@ -9,11 +9,12 @@ export default function HeroAreaSlider(props) {
 
     return (
         <>
+            
             <div className="single-slider" 
             {...HeroAreaInsProps({ fieldId: "image"})}
             style={{backgroundImage: `url(${props && props?.image?.url})`}} 
-            key= {Math.random()}>
-                
+            key= {Math.random()}>                
+                {/* <h2>Testing....</h2> */}
                 <div className="content">
                     <h2 {...HeroAreaInsProps({ fieldId: "subTitle"})}>
                         <span {...HeroAreaInsProps({ fieldId: "title"})}>{props && props?.title}</span>
