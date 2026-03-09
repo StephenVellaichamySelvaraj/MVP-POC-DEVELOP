@@ -8,7 +8,7 @@ export default function TopBar(props) {
     const HeaderDatasourceSysId = props?.HeaderDatasource[0]?.sys?.id
     const TopBarInsProps = useContentfulInspectorMode({ entryId: HeaderDatasourceSysId });
     const headerFields = props?.HeaderDatasource[0]?.fields
-    console.log(headerFields?.headerMiddleNavigation)
+    //console.log(headerFields?.headerMiddleNavigation)
 
   return (
     <>
