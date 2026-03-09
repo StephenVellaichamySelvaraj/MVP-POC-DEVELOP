@@ -1,5 +1,5 @@
 import React from 'react'
-import { NextSeo } from 'next-seo';
+// import { NextSeo } from 'next-seo';
 
 export default function NextSeoCommon(seoFields) {
   
@@ -9,13 +9,14 @@ export default function NextSeoCommon(seoFields) {
   //console.log(seoFields)
 
   return (
-    <NextSeo
-      title={seoFields && seoFields?.pageTitle}
-      description = {seoFields && seoFields?.pageDescription}
-      additionalMetaTags={[{
-        property: 'og:image',
-        content: seoFields && seoFields?.shareImagesCollection?.items[0]?.url
-      }]}
-    />
+    <></>
+    // <NextSeo
+    //   title={seoFields && seoFields?.pageTitle}
+    //   description = {seoFields && seoFields?.pageDescription}
+    //   additionalMetaTags={[{
+    //     property: 'og:image',
+    //     content: seoFields && seoFields?.shareImagesCollection?.items[0]?.url
+    //   }]}
+    // />
   )
 }

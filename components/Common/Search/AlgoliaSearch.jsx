@@ -1,4 +1,5 @@
-import algoliasearch from "algoliasearch/lite"
+// import algoliasearch from "algoliasearch/lite"
+import { algoliasearch } from "algoliasearch";
 import { Pagination } from 'react-instantsearch';
 import singletonRouter from "next/router"
 import React from "react"
